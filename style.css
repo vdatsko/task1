@@ -1,0 +1,290 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 320px;
+  background-color: #fff;
+  color: black
+}
+h1, h2, h3, h4 {
+  margin: 0;
+}
+label {
+  display: block;
+  color: #c6c8cc;
+  font-size: 12px;
+}
+input {
+  border: 1px solid #d4d4d4;
+  padding: 7px;
+  border-radius: 5px;
+}
+input:hover {
+  border: 2px solid #b1c4ec;
+  transition: 0.6s;
+}
+
+/* Main form */
+.form-main input {
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.container  h2 {
+  margin-top: 70px;
+  margin-left: 74px;
+  margin-bottom: 15px;
+}
+.form-main {
+  display: flex;
+}
+.form-main-left, .form-main-right {
+  width: 50%;
+  margin: 50px;
+}
+.input-group {
+  margin-left: 15px;
+  padding: 7px;
+}
+.input-checkbox {
+  display: flex;
+}
+.input-checkbox input {
+  width: 3%;
+  margin-left: 24px
+}
+.form-main-left .person-name {
+  display: flex;
+}
+.person-name .input-group, 
+.city .input-group {
+  width: 50%;
+}
+.form-main-right .city {
+  display: flex;
+}
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ====   =======*/
+
+/* Shipping */
+
+.shipping {
+  margin: 70px;
+}
+.wrapper {
+  display: flex;
+}
+.shipping h2 {
+  margin-left: 0;
+}
+.shipping-type {
+  margin-right: 200px;
+}
+.payment-method {
+  width: 50%;
+}
+.date {
+  width: 123px;
+  margin-right: 73px;
+}
+.shipping-type ul {
+  list-style: none;
+  padding: 0;
+}
+.shipping-type ul a {
+  text-decoration: none;
+  display: flex;
+  margin-top: 32px;
+}
+.shipping-type h3 {
+  padding-left: 10px;
+  color: #cecece;
+  font-size: 19px;
+}
+.info .express {
+  color: #424344;
+}
+.info .day {
+  color: #424344;
+}
+ .express h3 {
+  color: #424344;
+}
+.fa, .fas {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.common-cards {
+  display: flex;
+}
+.pay-pal {
+  width: 100%;
+}
+span {
+  font-size: 10px;
+  color: #cecece;
+  margin-left: 10px;
+}
+.billing-details {
+  display: flex;
+  width: 100%;
+}
+.input-group-card {
+  margin-top: 15px;
+}
+.input-group-number input {
+  width: 67px;
+}
+.input-group-card .date {
+  width: 153px;
+  margin-right: 91px;
+}
+.input-group-card input {
+  width: 67px;
+}
+.card-number .input-group {
+  display: flex;
+  width: 25%;
+}
+.card-data {
+  display: flex;
+}
+.shipping-type ul a .fa-truck {
+ color: darkgrey;
+} 
+.shipping-type ul a .fa-plane {
+  color: #ff5d5d;
+}
+.shipping-type ul a .fa-rocket {
+  color: darkgrey;
+ } 
+ button {
+  margin-right: 75px;
+  color: #f1eced;
+  background: #ef6597;
+  padding: 15px;
+  width: 200px;
+  border: transparent;
+  border-radius: 5px;
+ }
+ .alert {
+  max-width: 800px;
+  margin: 0 auto;
+  display: none;
+  border: 1px solid white;
+  padding: 5px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #79c879;
+ }
+ /* =======   ========= */
+
+ /* Media Query Selectors */
+ @media only screen and (max-width: 1170px) {
+    .shipping-type {
+      margin-right: 35px;
+    }
+ }
+ @media only screen and (max-width: 992px) {
+  .wrapper {
+    display: block;
+  }
+  .shipping-type {
+    display: block;
+    margin-right: 0;
+    
+  }
+  .shipping-type ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    
+  }
+  .input-group-number input {
+    width: 56px;
+}
+.input-group-card .date {
+  margin-right: 49px;
+  }
+ }
+
+ @media only screen and (max-width: 768px) {
+  .billing-details {
+    display: block; 
+  }
+  .payment-method {
+    margin: 0 auto;
+  }
+  .card-details {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .submit {
+    justify-content: center;
+  }
+
+ }
+
+ @media only screen and (max-width: 568px) {
+  .input-group-number input {
+    width: 34px;
+  }
+  .input-group-card .date {
+    margin-right: 20px;
+    width: 94px;
+  }
+  button {
+    margin-right: 0;
+  }
+ }
+
+ @media only screen and (max-width: 411px) {
+  .form-main {
+    display: block;
+  }
+  .form-main-left, .form-main-right {
+    margin: 0;
+    width: 100%;
+  }
+  .input-group {
+    margin-left: 5px;
+    padding: 7px;
+  }
+.shipping {
+  margin: 0px;
+  margin-right: 0px
+  }
+.payment-method {
+  width: 100%;
+  margin-left: 35px;
+  }
+  .input-group-number input {
+    width: 27px;
+  }
+  .input-group-card .date {
+    width: 71px;
+  }
+  button {
+    margin-top: 14px;
+  }
+ }
+
+ @media only screen and (max-width: 360px) {
+  .input-group-number input {
+    width: 25px;
+  }
+  .input-group-card .date {
+    margin-right: 6px;
+  }
+ }
