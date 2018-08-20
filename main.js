@@ -21,6 +21,8 @@ document.getElementById('contactForm').addEventListener('submit', submitForm);
 function submitForm(e) {
   e.preventDefault();
 
+  // to avoid such count of repeating try to use (loops and arrays or objects to collect data)
+
 // get values
   var name = getInputVal('name');
   var surname = getInputVal('surname');
@@ -39,7 +41,10 @@ function submitForm(e) {
   saveLetter(name, surname, company, email, phone, 
     country, city, code, address, number, date, cvc);
 
-    // Show alert
+  // to avoid such count of repeating try to use (loops and arrays or objects to collect data)
+  // so saveLetter method will accept one object like saveLetter(submittedData)
+
+  // Show alert
   document.querySelector('.alert').style.display = 'block';
 
   // Hide alert after 3 seconds
